@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="group">
+    
+  <header>
+    
+      <h2 class="logo">
+      <span>A</span>thipan !
+      </h2>
+    
+      <nav class=navigation>
+        
+          <ul [class]="doundo">
+              <li class="li" (click)="hideandsick()"><a  routerLink="home">HOME</a></li>
+              <li class="li" (click)="hideandsick()"><a routerLink="skills">SKILLS</a></li>
+              <li class="li" (click)="hideandsick()"><a routerLink="selflearning">PROJECTS</a></li>
+              <li class="li" (click)="hideandsick()"><a routerLink="about">ABOUT</a></li>
+              <li class="li" (click)="hideandsick()"><a routerLink="contact">CONTACT</a></li>
+          </ul>
+       
+      </nav>
+    
+
+      <div class="menu" (click)="hideandsick()">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+
+  </header>
+  
+
+    
+    <section class="section1">
+<div class="article2">
+      <div class="card">
+        <article class="image-box">
+          <img class="profile" src="assets\athi-crop.jpg">
+          </article>
+    
+        <div class="contant">
+            <h3>HEY I'M A SOFTWARE DEVELOPER</h3>
+            <p>Looking for a entry level job opportunity</p>
+        </div>
+    </div>
+</div>
+      
+
+          <article class="article1">
+              <router-outlet></router-outlet>
+          </article>
+      
+          
+      </section>
+      
+      
+      <footer class="footer">
+        <ul class="media">
+              
+          <li><a href="https://www.facebook.com/profile.php?id=61559577668307&mibextid=ZbWKwL"><img src="assets\fpdp.png"></a></li> 
+          <li ><a href="https://www.instagram.com/_a_t_h_i_p_a_n_?igsh=a3lwOHZjdG9xamYz"><img class="insta" src="assets\intag.png"></a></li> 
+          <li><a href="http://t.me/athipanR"><img  class="tele"src="assets\tele.png"></a></li> 
+        </ul>
+        
+      </footer>
+  </div>
+
+</div>
+
+<!--<script>
+  const menu=document.querySelector('.menu')
+  const menulist=document.querySelector('.navigation ul')
+  menu.addEventListener('click',()=>{
+    menulist.classList.toggle('showmenu');
+  })
+</script>-->
+
+
+</body>
+
+
+</html>
