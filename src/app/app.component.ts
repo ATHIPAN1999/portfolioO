@@ -10,8 +10,7 @@ export class AppComponent {
 
   doundo:String="";
   flag:boolean=true;
-  undo:String="";
-  hag:boolean=true;
+
    
   hideandsick()
   {
